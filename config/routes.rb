@@ -1,13 +1,15 @@
 Altcoinguard::Application.routes.draw do
   
-  get "coininfos/new"
-  get "coininfos/edit"
-  get "coininfos/index"
-  resources :coins
+  resources :coins do
+    resources :coin_infos
+  end
+
   root to: "coins#index"
 
   namespace :admin do
-    resources :coins
+    resources :coins do
+      resources :coin_infos
+    end
   end
 
 

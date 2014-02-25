@@ -4,7 +4,7 @@
 	<% @coins.each do |coin| %>
 		<tr>
 			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
-			<td>Coin info</td>
+			<td><%= link_to "Coin info", coin_coin_infos_path(coin) %></td>
 			<td>Pools</td>
 			<td>Exchanges</td>
 		</tr>

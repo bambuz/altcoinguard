@@ -1,3 +1,3 @@
 class Coin < ActiveRecord::Base
-	has_many :coin_infos
+	has_one :coin_info
 end
