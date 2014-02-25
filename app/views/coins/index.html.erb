@@ -1,9 +1,12 @@
 <h1>Coins</h1>
 
-<table>
+<table class="table">
 	<% @coins.each do |coin| %>
 		<tr>
 			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
+			<td>Coin info</td>
+			<td>Pools</td>
+			<td>Exchanges</td>
 		</tr>
 	<% end %>
 </table>
