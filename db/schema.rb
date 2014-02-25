@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224202454) do
+ActiveRecord::Schema.define(version: 20140225101454) do
+
+  create_table "coin_infos", force: true do |t|
+    t.integer  "totalcoins"
+    t.float    "coinsperblock"
+    t.integer  "coin_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "coin_infos", ["coin_id"], name: "index_coin_infos_on_coin_id"
 
   create_table "coins", force: true do |t|
     t.string   "name"

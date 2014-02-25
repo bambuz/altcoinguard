@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  totalcoins: 1
+  coinspreblock: 1.5
+  coin_id: 
+
+two:
+  totalcoins: 1
+  coinspreblock: 1.5
+  coin_id: 
