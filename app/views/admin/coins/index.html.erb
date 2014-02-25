@@ -1,4 +1,4 @@
-<h1>Admin Coins</h1>
+<h1>Admin - Coins</h1>
 
 <p><%= link_to "Add new coin", new_admin_coin_path, class: "btn btn-primary" %></p>
 
@@ -6,10 +6,10 @@
 	<% @coins.each do |coin| %>
 		<tr>
 			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
-			<td>Edit Delete</td>
 			<td>Coin info</td>
 			<td>Pools</td>
 			<td>Exchanges</td>
+			<td><%= link_to "Edit", edit_admin_coin_path(coin) %> | <%= link_to "Delete", admin_coin_path(coin), method: "delete" %></td>
 		</tr>
 	<% end %>
 </table>

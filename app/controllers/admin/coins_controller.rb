@@ -18,9 +18,23 @@ class Admin::CoinsController < ApplicationController
   end
 
   def edit
+  	@coin = Coin.find params[:id]
   end
 
   def update
+  	@coin = Coin.find params[:id]
+  	if @coin.update coin_params
+  		redirect_to admin_coins_url
+  	else
+  		render "edit"
+  	end
+  end
+
+  def destroy
+  	@coin = Coin.find params[:id]
+  	@coin.destroy
+
+  	redirect_to admin_coins_url
   end
 
   private
