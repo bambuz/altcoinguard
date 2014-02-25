@@ -1,2 +1,13 @@
-<h1>Admin::Coins#new</h1>
-<p>Find me in app/views/admin/coins/new.html.erb</p>
+<h1>Add new coin</h1>
+
+<%= form_for [:admin, @coin] do |f| %>
+
+	<%= f.label :thumbnail %>
+	<%= f.text_field :thumbnail %><br>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %><br>
+
+	<%= f.submit "Add new coin" %>
+
+<% end %>

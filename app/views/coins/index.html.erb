@@ -1,2 +1,9 @@
-<h1>Coins#index</h1>
-<p>Find me in app/views/coins/index.html.erb</p>
+<h1>Coins</h1>
+
+<table>
+	<% @coins.each do |coin| %>
+		<tr>
+			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
+		</tr>
+	<% end %>
+</table>

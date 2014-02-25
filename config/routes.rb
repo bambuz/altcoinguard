@@ -1,7 +1,13 @@
 Altcoinguard::Application.routes.draw do
-  get "coins/new"
-  get "coins/edit"
-  get "coins/index"
+  
+  resources :coins
+  root to: "coins#index"
+
+  namespace :admin do
+    resources :coins
+  end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
