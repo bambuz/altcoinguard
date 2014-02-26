@@ -1,0 +1,2 @@
+module Admin::PoolsHelper
+end

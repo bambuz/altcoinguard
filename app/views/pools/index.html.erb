@@ -1,0 +1,12 @@
+<h1>Pools for <%= @coin.name %></h1>
+
+<table class="table">
+	<% @pools.each do |pool| %>
+		<tr>
+			<td><%= pool.name %></td>
+			<td><%= pool.link %></td>
+		</tr>
+	<% end %>
+</table>
+
+<%= link_to "Back to Coins", coins_path, class: "btn btn-success" %>

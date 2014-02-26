@@ -1,0 +1,15 @@
+<h1>Admin - Pools for <%= @coin.name %></h1>
+
+<p><%= link_to "Add new pool", new_admin_coin_pool_path, class: "btn btn-primary" %></p>
+
+<table class="table">
+	<% @pools.each do |pool| %>
+		<tr>
+			<td><%= pool.name %></td>
+			<td><%= pool.link %></td>
+			<td><%= link_to "edit", edit_admin_coin_pool_path(@coin,pool) %> | <%= link_to "delete", admin_coin_pool_path(@coin,pool), method: "delete" %></td>
+		</tr>
+	<% end %>
+</table>
+
+<p><%= link_to "Back to coins", admin_coins_path, class: "btn btn-success" %></p>

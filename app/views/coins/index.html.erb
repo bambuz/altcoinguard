@@ -5,7 +5,7 @@
 		<tr>
 			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
 			<td><%= link_to "Coin info", coin_coin_infos_path(coin) %></td>
-			<td>Pools</td>
+			<td><%= link_to "Pools", coin_pools_path(coin) %></td>
 			<td>Exchanges</td>
 		</tr>
 	<% end %>

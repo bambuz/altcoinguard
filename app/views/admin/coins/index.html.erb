@@ -7,7 +7,7 @@
 		<tr>
 			<td><%= image_tag coin.thumbnail %> <%= coin.name %></td>
 			<td><%= link_to "Coin info", admin_coin_coin_infos_path(coin) %> | <%= link_to "New coin info", new_admin_coin_coin_info_path(coin) %></td>
-			<td>Pools</td>
+			<td><%= link_to "Pools", admin_coin_pools_path(coin) %></td>
 			<td>Exchanges</td>
 			<td><%= link_to "Edit", edit_admin_coin_path(coin) %> | <%= link_to "Delete", admin_coin_path(coin), method: "delete" %></td>
 		</tr>

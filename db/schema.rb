@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225101454) do
+ActiveRecord::Schema.define(version: 20140225155020) do
 
   create_table "coin_infos", force: true do |t|
     t.integer  "totalcoins"
@@ -29,5 +29,15 @@ ActiveRecord::Schema.define(version: 20140225101454) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "pools", force: true do |t|
+    t.string   "name"
+    t.string   "link"
+    t.integer  "coin_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pools", ["coin_id"], name: "index_pools_on_coin_id"
 
 end
