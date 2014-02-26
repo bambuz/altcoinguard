@@ -1,0 +1,12 @@
+<h1>Exchanges for <%= @coin.name %></h1>
+
+<table class="table">
+	<% @exchanges.each do |exchange| %>
+		<tr>
+			<td><%= exchange.name %></td>
+			<td><%= exchange.hashrate %></td>
+		</tr>
+	<% end %>
+</table>
+
+<%= link_to "Back to Coins", coins_path, class: "btn btn-success" %>

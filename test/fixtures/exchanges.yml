@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  hashrate: 1.5
+  coin_id: 
+
+two:
+  name: MyString
+  hashrate: 1.5
+  coin_id: 

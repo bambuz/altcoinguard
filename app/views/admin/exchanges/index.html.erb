@@ -1,0 +1,15 @@
+<h1>Admin - Exchanges for <%= @coin.name %></h1>
+
+<p><%= link_to "Add new exchange", new_admin_coin_exchange_path, class: "btn btn-primary" %></p>
+
+<table class="table">
+	<% @exchanges.each do |exchange| %>
+		<tr>
+			<td><%= exchange.name %></td>
+			<td><%= exchange.hashrate %></td>
+			<td><%= link_to "edit", edit_admin_coin_exchange_path(@coin,exchange) %> | <%= link_to "delete", admin_coin_exchange_path(@coin,exchange), method: "delete" %></td>
+		</tr>
+	<% end %>
+</table>
+
+<p><%= link_to "Back to coins", admin_coins_path, class: "btn btn-success" %></p>
