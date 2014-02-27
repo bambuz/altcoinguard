@@ -1,4 +1,6 @@
 class Admin::PoolsController < ApplicationController
+
+  layout "admin"
 	
   def index
   	@coin = Coin.find(params[:coin_id])

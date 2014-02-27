@@ -1,5 +1,7 @@
 class Admin::CoinInfosController < ApplicationController
 
+  layout "admin"
+
   def index
   	@coin = Coin.find(params[:coin_id])
   	@coininfo = @coin.coin_info

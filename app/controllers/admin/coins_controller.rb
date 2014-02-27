@@ -1,5 +1,7 @@
 class Admin::CoinsController < ApplicationController
 
+  layout "admin"
+
   def index
   	@coins = Coin.all
   end
