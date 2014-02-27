@@ -1,0 +1,14 @@
+<h1>New Coins Calendar</h1>
+
+<table class="table">
+	<% @calcoins.each do |calcoin| %>
+		<tr>
+			<td><%= calcoin.name %></td>
+			<td><%= calcoin.launchdate %></td>
+			<td>Coin info</td>
+			<td>Pools?</td>
+			<td>Exchanges?</td>
+		</tr>
+	<% end %>
+</table>
+

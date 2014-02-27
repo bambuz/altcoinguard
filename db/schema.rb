@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140226152049) do
+ActiveRecord::Schema.define(version: 20140227124955) do
+
+  create_table "calcoins", force: true do |t|
+    t.string   "name"
+    t.datetime "launchdate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "coin_infos", force: true do |t|
     t.integer  "totalcoins"

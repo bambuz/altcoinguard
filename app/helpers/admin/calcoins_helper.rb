@@ -1,0 +1,2 @@
+module Admin::CalcoinsHelper
+end

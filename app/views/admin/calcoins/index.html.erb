@@ -1,0 +1,16 @@
+<h1>Admin - New Coins Calendar</h1>
+
+<p><%= link_to "Add new calcoin", new_admin_calcoin_path, class: "btn btn-primary" %></p>
+
+<table class="table">
+	<% @calcoins.each do |calcoin| %>
+		<tr>
+			<td><%= calcoin.name %></td>
+			<td><%= calcoin.launchdate %></td>
+			<td>Coin info</td>
+			<td>Pools?</td>
+			<td>Exchanges?</td>
+			<td><%= link_to "Edit", edit_admin_calcoin_path(calcoin) %> | <%= link_to "Delete", admin_calcoin_path(calcoin), method: "delete" %></td>
+		</tr>
+	<% end %>
+</table>

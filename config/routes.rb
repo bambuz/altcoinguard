@@ -6,9 +6,12 @@ Altcoinguard::Application.routes.draw do
     resources :exchanges
   end
 
+  resources :calcoins
+
   root to: "coins#index"
 
   namespace :admin do
+    resources :calcoins
     resources :coins do
       resources :coin_infos
       resources :pools
