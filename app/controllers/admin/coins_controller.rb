@@ -6,6 +6,10 @@ class Admin::CoinsController < ApplicationController
   	@coins = Coin.all
   end
 
+  def show
+    @coin = Coin.find params[:id]
+  end
+
   def new
   	@coin = Coin.new
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227124955) do
+ActiveRecord::Schema.define(version: 20140301133100) do
 
   create_table "calcoins", force: true do |t|
     t.string   "name"
@@ -20,21 +20,38 @@ ActiveRecord::Schema.define(version: 20140227124955) do
     t.datetime "updated_at"
   end
 
-  create_table "coin_infos", force: true do |t|
-    t.integer  "totalcoins"
-    t.float    "coinsperblock"
-    t.integer  "coin_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "coin_infos", ["coin_id"], name: "index_coin_infos_on_coin_id"
-
   create_table "coins", force: true do |t|
     t.string   "name"
     t.string   "thumbnail"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "totalcoins"
+    t.float    "coinsperblock"
+    t.float    "thash"
+    t.time     "blocktime"
+    t.string   "ticker"
+    t.float    "diff"
+    t.datetime "adjusttime"
+    t.float    "premine"
+    t.string   "explorer"
+    t.string   "algorithm"
+    t.string   "webpage"
+    t.string   "bitcointalk"
+    t.string   "forum"
+    t.string   "developer"
+    t.string   "winwallet"
+    t.string   "osxwallet"
+    t.string   "linwallet"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.string   "googleplus"
+    t.datetime "launchtime"
+    t.string   "source"
+    t.text     "nodes"
+    t.datetime "timeperround"
+    t.integer  "actualblock"
+    t.text     "announcement"
+    t.text     "officialtext"
   end
 
   create_table "exchanges", force: true do |t|

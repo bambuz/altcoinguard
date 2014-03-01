@@ -1,0 +1,116 @@
+<h1>Admin - <%= @coin.name %> info</h1>
+
+<p><%= link_to "Back to coins", admin_coins_path, class: "btn btn-success" %></p>
+
+<table class="table">
+		<tr>
+			<td>Total coins</td>
+			<td><%= @coin.totalcoins %></td>
+		</tr>
+		<tr>
+			<td>Coins per block</td>
+			<td><%= @coin.coinsperblock %></td>
+		</tr>
+		<tr>
+			<td>Total hashrate</td>
+			<td><%= @coin.thash %></td>
+		</tr>
+		<tr>
+			<td>Time per block</td>
+			<td><%= @coin.blocktime %></td>
+		</tr>
+		<tr>
+			<td>Ticker</td>
+			<td><%= @coin.ticker %></td>
+		</tr>
+		<tr>
+			<td>Difficulty</td>
+			<td><%= @coin.diff %></td>
+		</tr>
+		<tr>
+			<td>Adjust time</td>
+			<td><%= @coin.adjusttime %></td>
+		</tr>
+		<tr>
+			<td>Premine</td>
+			<td><%= @coin.premine %></td>
+		</tr>
+		<tr>
+			<td>Block explorer</td>
+			<td><%= @coin.explorer %></td>
+		</tr>
+		<tr>
+			<td>Algorithm</td>
+			<td><%= @coin.algorithm %></td>
+		</tr>
+		<tr>
+			<td>Coin Webpage</td>
+			<td><%= @coin.webpage %></td>
+		</tr>
+		<tr>
+			<td>Bitcointalk thread</td>
+			<td><%= @coin.bitcointalk %></td>
+		</tr>
+		<tr>
+			<td>Official forum</td>
+			<td><%= @coin.forum %></td>
+		</tr>
+		<tr>
+			<td>Coin developer</td>
+			<td><%= @coin.developer %></td>
+		</tr>
+		<tr>
+			<td>Windows wallet</td>
+			<td><%= @coin.winwallet %></td>
+		</tr>
+		<tr>
+			<td>OSX wallet</td>
+			<td><%= @coin.osxwallet %></td>
+		</tr>
+		<tr>
+			<td>Linux wallet</td>
+			<td><%= @coin.linwallet %></td>
+		</tr>
+		<tr>
+			<td>Twitter</td>
+			<td><%= @coin.twitter %></td>
+		</tr>
+		<tr>
+			<td>Facebook</td>
+			<td><%= @coin.facebook %></td>
+		</tr>
+		<tr>
+			<td>Google plus</td>
+			<td><%= @coin.googleplus %></td>
+		</tr>
+		<tr>
+			<td>Time of launch</td>
+			<td><%= @coin.launchtime %></td>
+		</tr>
+		<tr>
+			<td>Source code</td>
+			<td><%= @coin.source %></td>
+		</tr>
+		<tr>
+			<td>Nodes</td>
+			<td><%= @coin.nodes %></td>
+		</tr>
+		<tr>
+			<td>Time per round</td>
+			<td><%= @coin.timeperround %></td>
+		</tr>
+		<tr>
+			<td>Actual block</td>
+			<td><%= @coin.actualblock %></td>
+		</tr>
+		<tr>
+			<td>Announcements</td>
+			<td><%= @coin.announcement %></td>
+		</tr>
+		<tr>
+			<td>Official text</td>
+			<td><%= @coin.officialtext %></td>
+		</tr>
+</table>
+
+<p><%= link_to "Back to coins", admin_coins_path, class: "btn btn-success" %></p>

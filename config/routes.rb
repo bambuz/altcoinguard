@@ -1,7 +1,6 @@
 Altcoinguard::Application.routes.draw do
   
   resources :coins do
-    resources :coin_infos
     resources :pools
     resources :exchanges
   end
@@ -13,7 +12,6 @@ Altcoinguard::Application.routes.draw do
   namespace :admin do
     resources :calcoins
     resources :coins do
-      resources :coin_infos
       resources :pools
       resources :exchanges
     end

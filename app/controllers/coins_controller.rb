@@ -4,4 +4,8 @@ class CoinsController < ApplicationController
   	@coins = Coin.all
   end
 
+  def show
+  	@coin = Coin.find params[:id]
+  end
+
 end
