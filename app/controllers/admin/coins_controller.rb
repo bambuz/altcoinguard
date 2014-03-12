@@ -46,7 +46,7 @@ class Admin::CoinsController < ApplicationController
   private
 
   def coin_params
-  	params[:coin].permit(:thumbnail, :name)
+  	params[:coin].permit(:thumbnail, :name, :totalcoins, :coinsperblock, :thash, :blocktime, :ticker, :diff, :adjusttime, :premine, :explorer, :algorithm, :webpage, :bitcointalk, :forum, :developer, :winwallet, :osxwallet, :linwallet, :twitter, :facebook, :googleplus, :launchtime, :source, :nodes, :timesperround, :actualblock, :announcement, :officialtext)
   end
 
 end
